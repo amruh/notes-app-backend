@@ -117,7 +117,7 @@ const deleteNoteHandler = (request, h) => {
       message: 'Note berhasil dihapus',
     });
 
-    response.code(202);
+    response.code(200);
     return response;
   }
 
