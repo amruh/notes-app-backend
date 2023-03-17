@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start-dev": "nodemon ./src/server",
-    "start-prod": "NODE_ENV=production node ./src/server"
+    "start-prod": "NODE_ENV=production node ./src/server",
+    "migrate": "node-pg-migrate"
   },
   "keywords": [],
   "author": "",
@@ -19,7 +20,10 @@
   },
   "dependencies": {
     "@hapi/hapi": "^21.1.0",
+    "dotenv": "^16.0.3",
     "joi": "^17.8.4",
-    "nanoid": "^3.3.4"
+    "nanoid": "^3.3.4",
+    "node-pg-migrate": "^6.2.2",
+    "pg": "^8.10.0"
   }
 }
